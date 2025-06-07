@@ -9,7 +9,7 @@
   }
   
   body {
-    background-color: #0d1117;
+    background-color: #061f45;
     color: #c9d1d9;
     line-height: 1.6;
   }
@@ -205,31 +205,23 @@
     clear: both;
   }
 
-/* Responsive header without stacking on small screens */
 @media (max-width: 768px) {
+  /* Stack logo and nav vertically and center them */
   .header-top {
-    flex-wrap: nowrap;
-    overflow-x: auto;
-    flex-direction: row;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
+    gap: 10px;
   }
 
   .main-heading {
-    font-size: 20px;
-    white-space: nowrap;
+    font-size: 22px;
+    text-align: center;
   }
 
   header nav ul {
-    flex-direction: row;
-    gap: 15px;
-    flex-wrap: nowrap;
-    overflow-x: auto;
-    padding-bottom: 5px;
-  }
-
-  header nav ul li {
-    white-space: nowrap;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
   }
 
   .home-section {
